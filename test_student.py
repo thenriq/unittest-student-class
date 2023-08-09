@@ -9,6 +9,12 @@ class TestStudent(unittest.TestCase):
 
         self.assertEqual(student.full_name, 'John Doe')
 
+
+    def test_email(self) :
+        student = Student('John', 'Doe')
+
+        self.assertEqual(student.email, 'john.doe@email.com')
+
     def test_alert_santa(self):
         student = Student('John', 'Doe')
         student.alert_santa()
